@@ -7,7 +7,7 @@ This Node.js module allows its users to browse, add, delete and search songs,
 To use this module in your Node.js project, follow these steps:
 
 Install Node.js if you have not already done so.
-Download Lennard_music.js file and put it into your project directory.
+Download TayWaiSeng301.js file and put it into your project directory.
 Create a file named music.js.
 Require the module in your music.js file:
 ```
