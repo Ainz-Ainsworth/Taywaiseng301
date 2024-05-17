@@ -49,4 +49,6 @@ deleteSongByTitle(title): Deletes a song by its title.
 findSongsByGenre(genre): Searches for songs by their genre.
 logSongs(songs): Logs songs by genre.
 viewAllSongs(): Displays all the songs in the database.
+playsong(): play the song if given the name in the database.
+
 
