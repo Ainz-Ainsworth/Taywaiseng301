@@ -50,8 +50,8 @@ function findSongsByGenre(genre) {
     return matchingSongs;
 }
 
-// Function to log songs
-function logSongs(songs) {
+// Function to store songs
+function storeSongs(songs) {
     if (songs.length === 0) {
         console.log(`No songs found for the given genre.`);
         return;
@@ -62,6 +62,16 @@ function logSongs(songs) {
     });
 }
 
+// Function to play songs in the database 
+function playSong(title) {
+    const song = database.find(song => song.title === title);
+    if (!song) {
+        console.log(`Song '${title}' not found.`);
+        return;
+    }
+
+    console.log(`Now playing: '${title}' by ${song.artist} from the album '${song.album}'.`);
+}
 
 
 //songs to add
@@ -71,17 +81,14 @@ addSong("Linkin Park", "What I've", "Minutes to Midnights", "01/04/2007", "5:00"
 addSong("Angela Zhang ", "yin xin de chi bang", " Zhang Shao Han", "11/07/2010", "3:27", "Chinese pop");
 
 const popSongs = findSongsByGenre('Pop');
-logSongs(popSongs);
-
-
+playsong('yin xin de chi bang');
+storeSongs(popSongs);
 viewAllSongs();
-
-
 deleteSongsByArtist("Micheal Jackson");
 viewAllSongs();
-
 deleteSongByTitle("Arrival To Earth");
 viewAllSongs();
+
 
 module.exports = {
     addSong,
@@ -89,6 +96,5 @@ module.exports = {
     deleteSongByTitle,
     viewAllSongs,
     findSongsByGenre,
-    updateSongDetails,
     playSong
 };
