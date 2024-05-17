@@ -39,6 +39,8 @@ musicLibrary.viewAllSongs();
 musicLibrary.deleteSongByTitle("Song2");
 musicLibrary.viewAllSongs();
 
+//play song
+music.library.playsong('yin xin de chi bang');
 ```
 
 ### Fuction
