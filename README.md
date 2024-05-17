@@ -11,7 +11,7 @@ Download Lennard_music.js file and put it into your project directory.
 Create a file named music.js.
 Require the module in your music.js file:
 ```
-const musicLibrary = require('./TayWaiSeng_301.js');
+const musicLibrary = require('./TayWaiSeng301.js');
 ```
 ### Music.js code
 
